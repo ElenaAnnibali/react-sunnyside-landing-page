@@ -159,6 +159,159 @@ const headerStyles = css`
   .side-menu:checked ~ .nav {
     max-height: 100%;
   }
+
+  @media (min-width: 376px) {
+    background: url('/images/desktop/image-header.jpg');
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    left: 0px;
+    top: 0px;
+
+    img {
+      top: 46px;
+      left: 40px;
+    }
+
+    h1 {
+      position: absolute;
+      width: 850px;
+      height: 69px;
+      left: 344.5px;
+      top: 195px;
+      font-size: 56px;
+      line-height: 69px;
+      /* identical to box height */
+
+      text-align: center;
+      letter-spacing: 8.75px;
+    }
+
+    i {
+      width: 30px;
+      height: 107.48px;
+      left: 705px;
+      top: 360.54px;
+    }
+
+    .hamb {
+      display: none;
+    }
+
+    .triangle {
+      display: none;
+    }
+
+    span {
+      text-align: center;
+      font-size: 18px;
+      line-height: 25px;
+
+      letter-spacing: -0.128571px;
+
+      color: #fff;
+    }
+
+    button {
+      position: absolute;
+      left: 327px;
+      top: 34px;
+      background: #fbd600;
+      border-radius: 28px;
+      width: 140px;
+      height: 56px;
+      border: 0px;
+      font-family: 'Fraunces-Black', Georgia, serif;
+      font-size: 15px;
+      line-height: 25px;
+
+      cursor: pointer;
+      letter-spacing: -0.107143px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+      z-index: 1000;
+    }
+
+    .navBar {
+      position: absolute;
+      width: 469px;
+      height: 329px;
+      left: 925px;
+      top: 0px;
+
+      .navBarContainer {
+        position: absolute;
+        width: 329px;
+        height: 56px;
+        left: 0%;
+        right: 0%;
+        top: 0px;
+        bottom: 0%;
+
+        background: transparent;
+        z-index: 1000;
+      }
+
+      .navLinks {
+        display: flex;
+        flex-direction: row !important;
+        gap: 47px;
+        position: absolute;
+        height: 139px;
+        width: 76px;
+        top: 50px;
+        left: 0;
+      }
+    }
+
+    /* .nav {
+      position: absolute;
+
+      top: 0px !important;
+      width: 527px;
+      height: 156px;
+      left: 800px !important;
+      z-index: 1000;
+    } */
+    /* .navBarContainer {
+      position: relative;
+      top: 8px !important;
+      left: 800px !important;
+      background-color: transparent !important;
+      z-index: 1000;
+
+    } */
+
+    /* .navLinks { */
+    /* display: flex;
+      flex-direction: row !important;
+      gap: 32px;
+      position: absolute;
+
+      z-index: 1000;
+      top: 0px;
+      left: 0px; */
+
+    /* span {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+
+
+        letter-spacing: -0.128571px;
+
+        color: #ffffff;
+      } */
+
+    /* button {
+        position: absolute;
+        top: 34px;
+        left: 1252px;
+      } */
+    /* } */
+  }
 `;
 
 export default function Header() {
@@ -174,8 +327,8 @@ export default function Header() {
       <div className="navBar nav">
         <div className="triangle" />
         <div className="navBarContainer">
-          <div className="navLinks">
-            <span>About</span>
+          <div className="navLinks menu">
+            <span className="about">About</span>
             <span>Services</span>
             <span>Projects</span>
           </div>

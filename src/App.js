@@ -546,8 +546,8 @@ function App() {
         <div className="thomas">
           <div />
           <p>
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
           </p>
           <h2 className="testimonialName">Thomas S.</h2>
           <span className="testimonialJob">Chief Operating Officer</span>
