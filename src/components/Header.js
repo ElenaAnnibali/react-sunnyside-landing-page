@@ -17,6 +17,18 @@ const headerStyles = css`
     top: 12px;
   }
 
+  h1 {
+    position: absolute;
+    top: 144px;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 6.25px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffffff;
+  }
+
   i {
     background: url('/images/icon-arrow-down.svg');
     background-size: contain;
@@ -33,6 +45,7 @@ export default function Header() {
   return (
     <div css={headerStyles}>
       <img src="/images/logo.svg" alt="logo" />
+      <h1> we are creatives</h1>
       <i />
     </div>
   );
