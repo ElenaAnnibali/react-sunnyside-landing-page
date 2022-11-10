@@ -597,7 +597,7 @@ const sunnysideStyles = css`
     .seventhContainer {
       position: absolute;
       top: 2670px;
-      height: 1858px;
+      height: 777px;
       left: 165px;
 
       .seventhContTitle {
