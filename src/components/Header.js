@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 const headerStyles = css`
   background: url('/images/image-header.jpg');
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   width: 375px;
   height: 538px;
@@ -162,9 +162,9 @@ const headerStyles = css`
 
   @media (min-width: 376px) {
     background: url('/images/desktop/image-header.jpg');
-    background-size: contain;
+    background-size: cover;
     position: absolute;
-    width: 100%;
+    width: 1440px;
     height: 800px;
     left: 0px;
     top: 0px;
@@ -217,21 +217,26 @@ const headerStyles = css`
       position: absolute;
       left: 327px;
       top: 34px;
-      background: #fbd600;
+      background: #fff;
       border-radius: 28px;
       width: 140px;
       height: 56px;
       border: 0px;
-      font-family: 'Fraunces-Black', Georgia, serif;
-      font-size: 15px;
-      line-height: 25px;
 
       cursor: pointer;
       letter-spacing: -0.107143px;
       text-transform: uppercase;
+      font-family: 'Fraunces-Black', Georgia, serif;
+      font-size: 15px;
+      line-height: 25px;
+      color: #000;
 
-      color: #ffffff;
       z-index: 1000;
+
+      :hover {
+        background: rgba(255, 255, 255, 0.25);
+        color: #fff;
+      }
     }
 
     .navBar {
@@ -265,52 +270,6 @@ const headerStyles = css`
         left: 0;
       }
     }
-
-    /* .nav {
-      position: absolute;
-
-      top: 0px !important;
-      width: 527px;
-      height: 156px;
-      left: 800px !important;
-      z-index: 1000;
-    } */
-    /* .navBarContainer {
-      position: relative;
-      top: 8px !important;
-      left: 800px !important;
-      background-color: transparent !important;
-      z-index: 1000;
-
-    } */
-
-    /* .navLinks { */
-    /* display: flex;
-      flex-direction: row !important;
-      gap: 32px;
-      position: absolute;
-
-      z-index: 1000;
-      top: 0px;
-      left: 0px; */
-
-    /* span {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 25px;
-
-
-        letter-spacing: -0.128571px;
-
-        color: #ffffff;
-      } */
-
-    /* button {
-        position: absolute;
-        top: 34px;
-        left: 1252px;
-      } */
-    /* } */
   }
 `;
 

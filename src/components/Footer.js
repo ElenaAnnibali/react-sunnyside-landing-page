@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 
 const footerStyles = css`
   position: absolute;
-  position: absolute;
+
   width: 375px;
   height: 350px;
   left: 0px;
@@ -26,12 +26,15 @@ const footerStyles = css`
     letter-spacing: -0.128571px;
 
     color: #458d7e;
+
+    :hover {
+      color: #fff;
+    }
   }
 
   i {
     width: 20px;
     height: 20px;
-    background: #2c7566;
   }
 
   .links {
@@ -52,19 +55,60 @@ const footerStyles = css`
 
   .facebook {
     background: url('images/icon-facebook.svg');
+
+    :hover {
+      background: url('images/icon-facebook-hover.svg');
+    }
   }
 
   .instagram {
     background: url('images/icon-instagram.svg');
+
+    :hover {
+      background: url('images/icon-instagram-hover.svg');
+    }
   }
 
   .twitter {
     background: url('images/icon-twitter.svg');
     height: 16.25px;
+
+    :hover {
+      background: url('images/icon-twitter-hover.svg');
+    }
   }
 
   .pinterest {
     background: url('images/icon-pinterest.svg');
+
+    :hover {
+      background: url('images/icon-pinterest-hover.svg');
+    }
+  }
+
+  @media (min-width: 376px) {
+    position: absolute;
+    width: 1440px;
+    height: 350px;
+    left: 0px;
+    top: 3734px;
+
+    background: #90d4c6;
+
+    img {
+      left: 628px;
+      top: 72px;
+    }
+
+    .links {
+      top: 145px;
+      left: 570px;
+    }
+
+    .icons {
+      left: 636px;
+      top: 258px;
+    }
   }
 `;
 
