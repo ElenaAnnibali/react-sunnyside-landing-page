@@ -721,88 +721,91 @@ const sunnysideStyles = css`
 
 function App() {
   return (
-    <div css={sunnysideStyles}>
+    <div className="sunnySide" css={sunnysideStyles}>
       <Header />
-      <div className="firstContainer">
-        <div className="transform" />
-      </div>
-      <div className="secondContainer">
-        <h2>Transform your brand</h2>
-        <p>
-          We are a full-service creative agency specializing in helping brands
-          grow fast. Engage your clients through compelling visuals that do most
-          of the marketing for you.
-        </p>
-        <a className="learnMore first" href="/">
-          learn more
-          <div />
-        </a>
-      </div>
-      <div className="thirdContainer">
-        <div className="standOut" />
-      </div>
-      <div className="fourthContainer">
-        <h2 className="fourthContTitle">Stand out to the right audience</h2>
-        <p>
-          Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we’ll build and extend
-          your brand in digital places.
-        </p>
-        <a className="learnMore second" href="/">
-          learn more
-          <div />
-        </a>
-      </div>
-      <div className="fifthContainer">
-        <h2>Graphic Design</h2>
-        <p>
-          Great design makes you memorable. We deliver artwork that underscores
-          your brand message and captures potential clients’ attention.
-        </p>
-      </div>
-      <div className="sixthContainer">
-        <h2>Photography</h2>
-        <p>
-          Increase your credibility by getting the most stunning, high-quality
-          photos that improve your business image.
-        </p>
-      </div>
-      <div className="seventhContainer">
-        <h2 className="seventhContTitle">client testimonials</h2>
-        <div className="emily">
-          <div />
-          <p>
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <h2 className="testimonialName">Emily R.</h2>
-          <span className="testimonialJob">Marketing Director</span>
+      <main>
+        <div className="firstContainer">
+          <div className="transform" />
         </div>
-        <div className="thomas">
-          <div />
+        <div className="secondContainer">
+          <h2>Transform your brand</h2>
           <p>
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
           </p>
-          <h2 className="testimonialName">Thomas S.</h2>
-          <span className="testimonialJob">Chief Operating Officer</span>
+          <a className="learnMore first" href="/">
+            learn more
+            <div />
+          </a>
         </div>
-        <div className="jennie">
-          <div />
+        <div className="thirdContainer">
+          <div className="standOut" />
+        </div>
+        <div className="fourthContainer">
+          <h2 className="fourthContTitle">Stand out to the right audience</h2>
           <p>
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
           </p>
-          <h2 className="testimonialName">Jennie F.</h2>
-          <span className="testimonialJob">Business Owner</span>
+          <a className="learnMore second" href="/">
+            learn more
+            <div />
+          </a>
         </div>
-      </div>
-      <div className="eightContainer">
-        <div className="milkBottles" />
-        <div className="orange" />
-        <div className="cone" />
-        <div className="sugar" />
-      </div>
+        <div className="fifthContainer">
+          <h2>Graphic Design</h2>
+          <p>
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
+        </div>
+        <div className="sixthContainer">
+          <h2>Photography</h2>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+        <div className="seventhContainer">
+          <h2 className="seventhContTitle">client testimonials</h2>
+          <div className="emily">
+            <div />
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <h2 className="testimonialName">Emily R.</h2>
+            <span className="testimonialJob">Marketing Director</span>
+          </div>
+          <div className="thomas">
+            <div />
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <h2 className="testimonialName">Thomas S.</h2>
+            <span className="testimonialJob">Chief Operating Officer</span>
+          </div>
+          <div className="jennie">
+            <div />
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <h2 className="testimonialName">Jennie F.</h2>
+            <span className="testimonialJob">Business Owner</span>
+          </div>
+        </div>
+        <div className="eightContainer">
+          <div className="milkBottles" />
+          <div className="orange" />
+          <div className="cone" />
+          <div className="sugar" />
+        </div>
+      </main>
       <Footer />
     </div>
   );

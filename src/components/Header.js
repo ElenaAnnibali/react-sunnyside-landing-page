@@ -162,7 +162,7 @@ const headerStyles = css`
 
   @media (min-width: 376px) {
     background: url('/images/desktop/image-header.jpg');
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     width: 1440px;
     height: 800px;
@@ -222,7 +222,7 @@ const headerStyles = css`
       width: 140px;
       height: 56px;
       border: 0px;
-
+      display: block;
       cursor: pointer;
       letter-spacing: -0.107143px;
       text-transform: uppercase;
@@ -231,12 +231,14 @@ const headerStyles = css`
       line-height: 25px;
       color: #000;
 
-      z-index: 1000;
-
       :hover {
         background: rgba(255, 255, 255, 0.25);
         color: #fff;
       }
+    }
+
+    .nav {
+      overflow: visible;
     }
 
     .navBar {
@@ -245,6 +247,7 @@ const headerStyles = css`
       height: 329px;
       left: 925px;
       top: 0px;
+      z-index: 1100;
 
       .navBarContainer {
         position: absolute;
@@ -256,7 +259,7 @@ const headerStyles = css`
         bottom: 0%;
 
         background: transparent;
-        z-index: 1000;
+        z-index: 1100;
       }
 
       .navLinks {
@@ -268,6 +271,7 @@ const headerStyles = css`
         width: 76px;
         top: 50px;
         left: 0;
+        z-index: 1100 !important;
       }
     }
   }
