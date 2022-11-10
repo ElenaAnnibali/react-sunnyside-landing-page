@@ -46,6 +46,8 @@ const sunnysideStyles = css`
   }
 
   .transform {
+    background: url('/images/image-transform.jpg');
+    background-size: contain;
     position: absolute;
     width: 375px;
     height: 312px;
@@ -84,6 +86,8 @@ const sunnysideStyles = css`
 
   .thirdContainer {
     .standOut {
+      background: url('/images/image-stand-out.jpg');
+      background-size: contain;
       position: absolute;
       width: 375px;
       height: 312px;
@@ -474,6 +478,245 @@ const sunnysideStyles = css`
       top: 187px;
     }
   }
+
+  @media (min-width: 376px) {
+    .transform {
+      background: url('/images/desktop/image-transform.jpg');
+
+      width: 720px;
+      height: 600px;
+      left: 720px;
+      top: 800px;
+    }
+
+    .secondContainer {
+      width: 100%;
+      height: 600px;
+
+      h2 {
+        width: 445px;
+        height: 98px;
+        left: 165px;
+        top: 958px;
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: -0.285714px;
+        text-align: left;
+      }
+
+      p {
+        width: 445px;
+        height: 90px;
+        left: 165px;
+        top: 1088px;
+
+        text-align: left;
+      }
+
+      .first {
+        width: 137px;
+        height: 25px;
+        left: 165.5px;
+        top: 1218px;
+      }
+    }
+
+    .thirdContainer {
+      .standOut {
+        background: url('/images/desktop/image-stand-out.jpg');
+        width: 720px;
+        height: 600px;
+        left: 0px;
+        top: 1400px;
+      }
+    }
+
+    .fourthContainer {
+      width: 720px;
+      height: 600px;
+      left: 720px;
+
+      top: 1400px;
+
+      .fourthContTitle {
+        width: 445px;
+        height: 98px;
+        left: 110px;
+        top: 157px;
+        font-size: 40px;
+        line-height: 49px;
+
+        text-align: left;
+      }
+
+      p {
+        width: 445px;
+        height: 90px;
+        left: 110px;
+        top: 288px;
+        text-align: left;
+      }
+
+      .second {
+        top: 418px;
+      }
+    }
+
+    .fifthContainer {
+      background: url('/images/desktop/image-graphic-design.jpg');
+
+      width: 720px;
+      height: 600px;
+      left: 0px;
+      top: 2000px;
+
+      p {
+        top: 460px;
+        left: 191px;
+        width: 339px;
+        height: 81px;
+      }
+    }
+
+    .sixthContainer {
+      background: url('/images/desktop/image-photography.jpg');
+
+      width: 720px;
+      height: 600px;
+      left: 720px;
+      top: 2000px;
+
+      p {
+        top: 460px;
+        left: 191px;
+        width: 339px;
+        height: 81px;
+      }
+    }
+
+    .seventhContainer {
+      position: absolute;
+      top: 2670px;
+      height: 1858px;
+      left: 165px;
+
+      .seventhContTitle {
+        position: absolute;
+        width: 448px;
+
+        left: 380px;
+        top: 0px;
+        text-align: center;
+
+        font-size: 20px;
+        line-height: 25px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 5px;
+      }
+
+      .emily {
+        position: absolute;
+        width: 327px;
+        /* height: 288px; */
+        left: 0;
+        top: 106px;
+
+        div {
+          top: 0px;
+          left: 139px;
+        }
+
+        p {
+          top: 130px;
+          left: 0px;
+        }
+
+        .testimonialName {
+          top: 296px;
+          left: 128px;
+        }
+
+        .testimonialJob {
+          left: 65px;
+        }
+      }
+
+      .thomas {
+        left: 380px;
+        top: 106px;
+
+        div {
+          top: 0px;
+        }
+
+        p {
+          top: 130px;
+        }
+
+        .testimonialName {
+          left: 140px;
+        }
+      }
+
+      .jennie {
+        top: 106px;
+        left: 760px;
+
+        div {
+          top: 0px;
+        }
+
+        p {
+          top: 130px;
+          width: 350px;
+        }
+      }
+    }
+
+    .eightContainer {
+      position: absolute;
+      width: 100%;
+      height: 447px;
+      left: 0px;
+      top: 3287px;
+
+      .milkBottles {
+        background: url('images/desktop/image-gallery-milkbottles.jpg');
+        background-size: cover;
+        width: 360px;
+        height: 447px;
+      }
+
+      .orange {
+        background: url('images/desktop/image-gallery-orange.jpg');
+        background-size: cover;
+        width: 360px;
+        height: 447px;
+        left: 360px;
+      }
+
+      .cone {
+        background: url('images/desktop/image-gallery-cone.jpg');
+        background-size: cover;
+        width: 360px;
+        height: 447px;
+        left: 720px;
+
+        top: 0px;
+      }
+
+      .sugar {
+        background: url('images/image-gallery-sugar-cubes.jpg');
+        background-size: cover;
+        width: 360px;
+        height: 447px;
+        left: 1080px;
+        top: 0;
+      }
+    }
+  }
 `;
 
 function App() {
@@ -481,11 +724,7 @@ function App() {
     <div css={sunnysideStyles}>
       <Header />
       <div className="firstContainer">
-        <img
-          className="transform"
-          src="/images/image-transform.jpg"
-          alt="egg on a yellow background"
-        />
+        <div className="transform" />
       </div>
       <div className="secondContainer">
         <h2>Transform your brand</h2>
@@ -500,11 +739,7 @@ function App() {
         </a>
       </div>
       <div className="thirdContainer">
-        <img
-          className="standOut"
-          src="/images/image-stand-out.jpg"
-          alt="stand out"
-        />
+        <div className="standOut" />
       </div>
       <div className="fourthContainer">
         <h2 className="fourthContTitle">Stand out to the right audience</h2>
